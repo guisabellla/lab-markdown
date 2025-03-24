@@ -1,4 +1,4 @@
- 
+Note: The python file is in the folder 'data' 
 
 phrase | percent of tweets | 
 --- | --- |
