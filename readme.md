@@ -1,3 +1,5 @@
+## Donald Trump's tweets analysis
+
 Note: The python file is in the folder 'data' 
 
 phrase | percent of tweets | 
@@ -12,4 +14,5 @@ russia | 01.13
 trump | 38.35
 
 ![tweet analysis graph](my_figure.png "graph")
+
 The graph presents how many times each word occur in Donald Trump's tweets from year 2009 to year 2018. 
