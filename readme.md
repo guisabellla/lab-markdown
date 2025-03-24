@@ -11,4 +11,4 @@ obama | 07.47
 russia | 01.13
 trump | 38.35
 
-![tweet analysis graph](C:\Users\GuShuaiqi\Documents\GitHub\lab-markdown\my_figure.png)
+![tweet analysis graph](C:\Users\GuShuaiqi\Documents\GitHub\lab-markdown\my_figure.png "graph")
