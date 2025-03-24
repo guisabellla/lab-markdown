@@ -134,8 +134,8 @@ files = [
     'data/master_2014.json',
     'data/master_2015.json',
     'data/master_2016.json',
-    'data/master_2017.json',
-    'data/master_2018.json',
+    'data/condensed_2017.json',
+    'data/condensed_2018.json',
 ]
 data = []
 for file in files:
@@ -154,6 +154,9 @@ russia_counts = 0
 obama_counts = 0
 fakenews_counts = 0
 mexico_counts = 0
+america_counts = 0
+great_counts = 0
+again_counts = 0
 for i, tweet in enumerate(data):
     #if 'trump' in tweet['text'] or 'Trump' in tweet['text'] or 'TRUMP' in tweet['text']:
     if 'trump' in tweet['text'].lower():
@@ -166,11 +169,20 @@ for i, tweet in enumerate(data):
         fakenews_counts += 1
     if 'mexico' in tweet['text'].lower():
         mexico_counts += 1
+    if 'america' in tweet['text'].lower():
+        america_counts += 1
+    if 'great' in tweet['text'].lower():
+        great_counts += 1
+    if 'again' in tweet['text'].lower():
+        again_counts += 1
 print(f'trump_counts={trump_counts}')
 print(f'russia_counts={russia_counts}')
 print(f'obama_counts={obama_counts}')
 print(f'fake news_counts={fakenews_counts}')
 print(f'mexico_counts={mexico_counts}')
+print(f'america_counts={america_counts}')
+print(f'great_counts={great_counts}')
+print(f'again_counts={again_counts}')
 
 #print(f"i={i}, lang={tweet['lang']}, text={tweet['text']}")
 
@@ -180,6 +192,9 @@ word_counts = {
     'obama':0,
     'fake news':0,
     'mexico':0,
+    'america':0,
+    'great':0,
+    'again':0,
 }
 for i, tweet in enumerate(data):
     for word in word_counts:
